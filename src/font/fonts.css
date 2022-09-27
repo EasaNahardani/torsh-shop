@@ -8,3 +8,15 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+
+@font-face {
+	font-family: "fadigits";
+	src: url("./Gandom-FD-WOL.eot");
+	src: url("./Gandom-FD-WOL.eot?#iefix") format("embedded-opentype"),
+	url("./Gandom-FD-WOL.woff") format("woff"),
+	url("./Gandom-FD-WOL.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	unicode-range: "U+30-39";
+}
