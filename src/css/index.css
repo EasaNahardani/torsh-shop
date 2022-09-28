@@ -29,6 +29,7 @@
   --color-blue-900: hsl(224, 64%, 33%);
   --color-yellow-light: hsl(53deg 100% 91%);
   --color-yellow-dark: hsl(54deg 100% 60%);
+  --color-yellow-darker:hsl(54deg 79% 43%);
   --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
      0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -97,7 +98,7 @@ video {
 }
 
 .container {
-  max-width: 75rem;
+  max-width: 70rem;
   height: auto;
   margin: 0 auto;
   padding: 0 1.25rem;
@@ -244,7 +245,7 @@ video {
   height: auto;
   padding: 4rem 0 3rem;
   overflow: hidden;
-  background-color: var(--color-black-300);
+  background-color: var(--color-yellow-light);
   box-shadow: var(--shadow-medium);
   transition: all 0.4s ease-in-out;
 }
@@ -354,7 +355,7 @@ video {
   outline: none;
   opacity: 1;
   transform: rotate(0deg);
-  background-color: var(--color-white-100);
+  background-color: var(--color-yellow-darker);
   transition: 0.25s ease-in-out;
 }
 .burger-line:nth-child(1) {
@@ -422,11 +423,12 @@ video {
     margin-left: 5rem;
   }
 }
+
 .banner-inner {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   row-gap: 1.75rem;
+  align-items: center;
 }
 .banner-links {
   position: absolute;
@@ -438,10 +440,18 @@ video {
   opacity: 0;
   visibility: hidden;
 }
+@media only screen and (min-width: 48rem) {
+  .banner-inner {
+  }
+}
+
 @media only screen and (min-width: 64rem) {
   .banner-links {
     opacity: 1;
     visibility: visible;
+  }
+  .banner-inner {
+    align-items: flex-start;
   }
 }
 
@@ -516,7 +526,21 @@ section.title{
   height: auto;
   max-height: 350px;
 }
-.popular-product video{
+
+.h_iframe-aparat_embed_frame{
+  position:relative;
+}
+.h_iframe-aparat_embed_frame .ratio{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.h_iframe-aparat_embed_frame iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
   max-height: 300px;
   border-radius: 20px;
 }
@@ -546,9 +570,25 @@ section.title{
 
 .product{
   position: relative;
-  margin: 0.5rem 0.7rem;
+  margin: 4rem 0.5rem;
+  flex-basis: 50%;
 }
 
+@media only screen and (min-width: 23rem) {
+  .product{
+    flex-basis: 40%;
+  }
+}
+@media only screen and (min-width: 38rem) {
+  .product{
+    flex-basis: 30%;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .product{
+    flex-basis: 22%;
+  }
+}
 .product .title{
   position: absolute;
   bottom: 15%;
@@ -561,8 +601,8 @@ section.title{
 .product_img{
   position: absolute;
   bottom: 50%;
-  width: 20%;
-  left: 40%;
+  width: 57%;
+  left: 26%;
 }
 .bowl{
 
