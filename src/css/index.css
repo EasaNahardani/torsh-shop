@@ -94,8 +94,29 @@ video {
 
 .section {
   margin: 0 auto;
-  padding: 3rem 0 1rem;
+  padding: 1.3rem 0 1rem;
 }
+
+
+@media only screen and (min-width: 24rem) {
+  .section {
+    padding: 1.3rem 0 1rem;
+  }
+}
+@media only screen and (min-width: 38rem) {
+  .section {
+    padding: 3rem 0 1rem;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .section {
+    padding: 3rem 0 1rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+
+}
+
 
 .container {
   max-width: 70rem;
@@ -587,7 +608,7 @@ section.title{
 
 .product{
   position: relative;
-  margin: 2.85rem 0.5rem;
+  margin: 2.86rem 0.5rem;
   flex-basis: 80%;
 }
 .product .title{
