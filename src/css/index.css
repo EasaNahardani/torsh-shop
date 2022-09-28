@@ -515,17 +515,45 @@ section.title{
     height: 1.5px;
     background: var(--color-black-100);
 }
-.popular-product{
-  display: flex;
-  justify-content: space-evenly;
+.text{
+  max-width: 370px;
+  padding: 30px 15px 0;
 }
 
+.text h2{
+  text-align: center;
+}
+.text p{
+  line-height: 2.7rem;
+  word-spacing: 2px;
+  text-align: right;
+}
 .asset{
   max-width: 350px;
-  width: 40%;
+  width: 80%;
   height: auto;
   max-height: 350px;
 }
+.popular-product{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+@media only screen and (min-width: 40rem) {
+  .popular-product{
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .text{
+    padding: 0;
+  }
+  .asset{
+    width: 40%;
+  }
+}
+
 
 .h_iframe-aparat_embed_frame{
   position:relative;
@@ -544,18 +572,7 @@ section.title{
   max-height: 300px;
   border-radius: 20px;
 }
-.text{
-  max-width: 370px;
-}
 
-.text h2{
-  text-align: center;
-}
-.text p{
-  line-height: 2.7rem;
-  word-spacing: 2px;
-  text-align: right;
-}
 
 .lemon img{
   border-radius: 45% 55% 77% 23% / 40% 37% 63% 60% ;
@@ -571,10 +588,10 @@ section.title{
 .product{
   position: relative;
   margin: 4rem 0.5rem;
-  flex-basis: 50%;
+  flex-basis: 80%;
 }
 
-@media only screen and (min-width: 23rem) {
+@media only screen and (min-width: 26rem) {
   .product{
     flex-basis: 40%;
   }
