@@ -489,7 +489,7 @@ video {
 
 section.title{
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 7rem;
 }
 .title span{
   position: relative;
@@ -590,22 +590,6 @@ section.title{
   margin: 4rem 0.5rem;
   flex-basis: 80%;
 }
-
-@media only screen and (min-width: 26rem) {
-  .product{
-    flex-basis: 40%;
-  }
-}
-@media only screen and (min-width: 38rem) {
-  .product{
-    flex-basis: 30%;
-  }
-}
-@media only screen and (min-width: 64rem) {
-  .product{
-    flex-basis: 22%;
-  }
-}
 .product .title{
   position: absolute;
   bottom: 15%;
@@ -619,11 +603,39 @@ section.title{
   position: absolute;
   bottom: 50%;
   width: 57%;
-  left: 26%;
+  left: 25%;
 }
-.bowl{
 
+@media only screen and (min-width: 24rem) {
+  .product{
+    flex-basis: 44%;
+  }
+  .product .title{
+    font-size: .7rem;
+  }
 }
+@media only screen and (min-width: 38rem) {
+  .product{
+    flex-basis: 30%;
+  }
+  .product .title{
+    font-size: .92rem;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .product .title{
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .product{
+    flex-basis: 22%;
+  }
+  .product .title{
+    font-size: 1.5rem;
+  }
+}
+
 
 /******************    contact    ******************************/
 .contact > div{
